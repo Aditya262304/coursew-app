@@ -15,14 +15,14 @@ class UserTableSeeder extends Seeder
         //
         $a = new User();
         $a->name = "Aditya";
-        $a->email = "123@gmail.com";
+        $a->email = "9123@gmail.com";
         $a->password = "test1234";
-        $a->usertype = "admin";
+        $a->type = "admin";
         $a->save();
 
         $b = new User();
         $b->name = "jack";
-        $b->email = "jack@gmail.com";
+        $b->email = "jack1@gmail.com";
         $b->password = "jack1234";
         $b->save();
         User::factory()->count(3)->create();

@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('hashtags', function (Blueprint $table) {
             $table->id();
             $table->string('hashtag');
+            //$table->bigInteger('post_id')->unsigned();
             $table->timestamps();
+            // $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

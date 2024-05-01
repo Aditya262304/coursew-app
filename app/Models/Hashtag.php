@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Hashtag extends Model
 {
     use HasFactory;
+
+    public function post(){
+        return $this->belongsToMany(Post::class);
+    }
 }
