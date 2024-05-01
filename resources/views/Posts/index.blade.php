@@ -9,7 +9,7 @@
             <div class="py-12">
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 grid justify-items-center">
-            @include('posts.create')
+            @include('Posts.create')
             <div class="bg-gray-800 dark:bg-gray-600 overflow-hidden shadow-sm sm:rounded-lg w-3/5 ">
 
                 <div class=" text-gray-900 dark:text-gray-100 grid justify-items-center content-evenly">
@@ -75,7 +75,7 @@
             <div class="py-12">
 
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 grid justify-items-center">
-            @include('posts.create')
+            @include('Posts.create')
             <div class="bg-gray-800 dark:bg-gray-600 overflow-hidden shadow-sm sm:rounded-lg w-3/5 ">
 
                 <div class=" text-gray-900 dark:text-gray-100 grid justify-items-center content-evenly">

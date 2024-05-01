@@ -48,7 +48,7 @@
             </div>
             <div class=" mt-4 p-6 border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700
                 text-white">
-                @include('comments.create')
+                @include('Comments.create')
             </div>
 
             <div
@@ -126,7 +126,7 @@
             </div>
             <div class=" mt-4 p-6 border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700
                 text-white">
-                @include('comments.create')
+                @include('Comments.create')
             </div>
 
             <div

@@ -15,7 +15,7 @@ class UserController extends Controller
         //
         $posts = Post::where('user_id',$id)->get();
         $comments = Comment::where('user_id',$id)->get();
-        return view("users.index", compact("posts","comments"));
+        return view("Users.index", compact("posts","comments"));
     }
 
     /**

@@ -18,7 +18,7 @@ class PostController extends Controller
         $posts = Post::orderBy('created_at','DESC')->paginate(5);
 
 
-        return view('posts.index',['posts'=>$posts]);
+        return view('Posts.index',['posts'=>$posts]);
     }
 
     /**
@@ -71,7 +71,7 @@ class PostController extends Controller
         //
         $post = Post::findOrFail($id);
 
-        return view('posts.edit', compact('post'));
+        return view('Posts.edit', compact('post'));
     }
 
     /**
@@ -103,7 +103,7 @@ class PostController extends Controller
 
         $posts = Post::all();
         $posts = Post::orderBy('created_at','DESC')->paginate(5);
-        return view('posts.index',['posts'=>$posts]);
+        return view('Posts.index',['posts'=>$posts]);
 
     }
 

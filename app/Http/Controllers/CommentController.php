@@ -17,7 +17,7 @@ class CommentController extends Controller
         $post = Post::findOrFail($postId);
         $comments = $post->comments;
 
-        return view('comments.index', compact('comments', 'post'));
+        return view('Comments.index', compact('comments', 'post'));
     }
 
     /**
@@ -78,7 +78,7 @@ class CommentController extends Controller
     {
         //
         $comment = Comment::findOrFail($id);
-        return view('comments.edit', compact('comment'));
+        return view('Comments.edit', compact('comment'));
     }
 
     /**
@@ -97,7 +97,7 @@ class CommentController extends Controller
         ]);
 
         $comments = Comment::all();
-        return view('comments.index',['comments' => $comments]);
+        return view('Comments.index',['comments' => $comments]);
 
     }
 
