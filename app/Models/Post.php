@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+
+    protected $fillable = [
+        'post',
+        // Add other attributes that can be mass-assigned here
+    ];
+
     use HasFactory;
     public function user(){
         return $this->belongsTo(User::class);

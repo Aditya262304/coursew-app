@@ -56,9 +56,17 @@ class CommentController extends Controller
                 // Save the comment
                 $comment->save();
 
+                // return response()->json([
+                //     'status'=> 200,
+                //     'errors'=>"Comment added successfully",
+                // ]);
+
                 return response()->json([
-                    'status'=> 200,
-                    'errors'=>"Comment added successfully",
+                    'status' => 200,
+                    'message' => "Comment added successfully",
+                    'comment' => $comment->comment, // Comment text
+                    'user_id' => $validateData['user_id'], // Using user_id from validated data
+                    'post_id' => $validateData['post_id'],
                 ]);
         }
     }

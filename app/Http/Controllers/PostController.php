@@ -11,6 +11,12 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+     protected $fillable = [
+        'post',
+        // Add other attributes that can be mass-assigned here
+    ];
+
     public function index()
     {
         //
@@ -37,7 +43,7 @@ class PostController extends Controller
         //
         $request->validate([
             'post' =>'required',
-            'image'=>'required|image|mimes:png,jpg,png,gif,svg',
+            'image'=>'image|mimes:png,jpg,png,gif,svg',
         ]);
 
         $post = new Post();

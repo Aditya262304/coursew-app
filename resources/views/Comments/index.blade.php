@@ -52,7 +52,7 @@
 
             <div class="mt-4 ">
                 @foreach ($post->comments as $comment)
-                <div class="mt-2 mb-4 p-6 border border-gray-200 rounded-lg shadow dark:bg-gray-500 dark:border-gray-700">
+                <div class=" mt-2 mb-4 p-6 border border-gray-200 rounded-lg shadow dark:bg-gray-500 dark:border-gray-700">
                     <div class="container mt-1">
                         <div class="row g-3 mb-4">
                             <div class="col-md-2">
@@ -75,13 +75,15 @@
 
                 @endforeach
             </div>
+            <div class="jai">
 
+            </div>
         </div>
 
 
     </div>
     @else
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 grid justify-items-center text-black">
+    <div class="ajax_demo max-w-7xl mx-auto sm:px-6 lg:px-8 grid justify-items-center text-black">
 
 
 
