@@ -22,7 +22,7 @@
                 @method('PUT')
                 <div class="px-3 mb-2 mt-2">
                 <textarea name="post" placeholder="{{ $post->post }}"
-                class="w-full h-64 bg-gray-100 rounded border border-gray-400 leading-normal resize-none py-2 px-3 font-medium placeholder-gray-900  focus:outline-none text-white"></textarea>
+                class="w-full h-64 bg-gray-100 rounded border border-gray-400 leading-normal resize-none py-2 px-3 font-medium placeholder-gray-900  focus:outline-none "></textarea>
                 </div>
                 <div class="px-3 mb-2 mt-2">
                     <label for="">Upload Image</label>
