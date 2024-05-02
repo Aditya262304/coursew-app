@@ -16,7 +16,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/posts/{post}',[PostController::class,'index'])->name('post.index');
 
-Route::get('/comments/{id}', [CommentController::class,'index'])->name('comment.index');
+Route::get('/comments/{id}', [CommentController::class,'index'])->name('comments.index');
 
 Route::get('/users/{id}',[UserController::class,'index'])->name('user.index');
 

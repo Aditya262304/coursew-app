@@ -1,11 +1,11 @@
 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 grid justify-items-center">
-    <form  method="post" id="commentForm" class="w-3/5 max-w-2xl bg-gray-600 rounded-lg p-2 mx-auto m-4">
+    <form  method="post" id="commentForm" class="w-4/5 max-w-2xl bg-gray-300 rounded-lg p-2 mx-auto m-4">
         @csrf
 
         <input type="hidden" class="user_id" value="{{ auth()->user()->id }}">
         <input type="hidden" class="post_id" value="{{ $post->id }}">
         <div class="px-3 mb-2 mt-2">
-            <textarea id="commentInput" placeholder="Comment" class="comment w-full bg-gray-500 rounded border border-gray-400 leading-normal resize-none h-20 py-2 px-3 font-medium placeholder-gray-900 focus:outline-none text-white"></textarea>
+            <textarea id="commentInput" placeholder="Comment" class="comment w-full bg-gray-100 rounded border border-gray-900 leading-normal resize-none h-20 py-2 px-3 font-medium placeholder-gray-900 focus:outline-none text-black"></textarea>
         </div>
         <div class="flex justify-end px-4">
             <input type="submit" class="comment_submit px-2.5 py-1.5 rounded-md text-white text-sm bg-indigo-500" value="Comment">
@@ -16,7 +16,7 @@
 @section('scripts')
 <script>
 
-    $(document).ready(function () {
+$(document).ready(function () {
         $(document).on('click', '.comment_submit', function(e){
             e.preventDefault();
             // AJAX request
