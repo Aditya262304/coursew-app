@@ -75,7 +75,7 @@
 
                 @endforeach
             </div>
-            <div class="jai">
+            <div class="postingCommentUsingAJAX">
 
             </div>
         </div>

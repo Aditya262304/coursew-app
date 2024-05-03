@@ -23,7 +23,7 @@
                                     {{$post->user->name}}
                                 </div>
                                 <div class="col-md-7">
-                                   <a href="{{route('user.index',['id' =>$post->user->id])}}">{{$post->user->tags->nametag}}</a>
+                                   <a href="{{route('user.index',['id' =>$post->user->id])}}">{{ $post->user->tags->nametag }}</a>
                                 </div>
                                 <div class="col">
 

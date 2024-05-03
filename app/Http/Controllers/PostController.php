@@ -43,7 +43,7 @@ class PostController extends Controller
         //
         $request->validate([
             'post' =>'required',
-            'image'=>'image|mimes:png,jpg,png,gif,svg',
+            'image'=>'image|mimes:png,jpg,gif,svg',
         ]);
 
         $post = new Post();

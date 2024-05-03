@@ -30,7 +30,7 @@ $(document).ready(function () {
                 'user_id' : $('.user_id').val(),
                 'post_id' : $('.post_id').val(),
             }
-            console.log(data);
+            // console.log(data);
 
             $.ajaxSetup({
                 headers: {
@@ -67,7 +67,7 @@ $(document).ready(function () {
                         '</div>' +
                     '</div>';
 
-                    $('.jai').append(commentHtml);
+                    $('.postingCommentUsingAJAX').append(commentHtml);
 
                 },
                 error: function (error) {
